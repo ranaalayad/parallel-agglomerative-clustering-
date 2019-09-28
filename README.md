@@ -1,6 +1,7 @@
 # parallel-agglomerative-clustering-
-The code in ubuntu and it take a point (name, x coordinate, y coordinate) as an input, the output will be the number of iteration, clusters with the points inside, from the first cluster until being one cluster in addition to the time to end this process.
+The code in ubuntu, it take a point (name, x coordinate, y coordinate) as an input, the output will be the number of iteration, clusters with the points inside, from the first cluster until being one cluster in addition to the time to end this process.
 
+(to run my code you just need agglomerative.jar and input.txt )
 at first HAC file must be on Desktop and contain agglomerative.jar, agglomerative.java and input file with name input.txt
 to make file directory:
 1-Hadoop fs mkdir /HAC
@@ -8,7 +9,7 @@ to make file directory:
 3-hadoop fs -put input.txt  /HAC/input
 when the code is agglomerative.jar go to directory, in my case it is:
 1-cd Desktop/HAC
-2-hadoop jar jar-file-just-drop-it-and-drag-it-here /HAC/input-file-name-in-HDFS /HAC/output
+2-hadoop jar agglomerative.jar /HAC/input-file-name-in-HDFS /HAC/output
 Then the output will show in the screen.
 
 	Addition hints:
